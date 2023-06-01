@@ -141,12 +141,12 @@ function activePage( i )
 function pagination ()
 {
   $("ul.pagination").css("display","none");
-  $("ul.pagination").addClass('pt-2 mb-0 pb-4')
+  $("ul.pagination").addClass('my-5')
   if(countPages() > 1)
   {
     for(var i = 1; i <= countPages(); i++)
     {
-    var li = '<li> <a href="index.html?page=' + i + '" class="btn-sesc mx-1 d-inline-block">' + i + '</a> </li>';
+    var li = '<li class="page-item"> <a href="index.html?page=' + i + '" class="page-link">' + i + '</a> </li>';
       $("ul.pagination").append(li);
     }
     $("ul.pagination").css("display","");

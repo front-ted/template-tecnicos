@@ -18,22 +18,22 @@
 
     </head>
     <body>
+        <!-- Preloader OBRIGATÓRIO-->
         <div class="preloader">
             <div class="anim"></div>
             <h1>Aguarde enquanto o conteúdo é carregado.</h1>
         </div>
-        <!-- MARCA D´ÁGUA -->
+        <!-- Marca d'água OBRIGATÓRIA -->
         <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
 
         <header id="topo" class="no-print">
             <img src="../assets/images/barra_topo.png" class="d-none d-lg-block img-fluid" alt="">        
         </header>
-        <!-- Section principal deve ter o booklet, pois faz parte do print.js -->    
+        <!-- Section principal com id=booklet OBRIGATÓRIO para funcionamento do print-->    
         <section id="booklet">
-            <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
             <header class="titulo-conteudo print">
                 <div class="container">
-                    <!--titulo do curso para o print e leitor de tela-->
+                    <!--Título do curso para o print e leitor de tela-->
                     <h1 id="nome-curso" class="d-none print">h1 - Título do curso</h1>
                     <div class="row pt-4">
                         <div class="col-9">                      
@@ -45,6 +45,7 @@
                     </div>
                 </div>         
             </header>
+            <!--Section class=paginas OBRIGATÓRIA para funcionamento da paginação e do print-->
             <section class="paginas">
                 <div class="container pagina">
                     <h3 class="mb-4">h3 - Subtítulo</h3>
@@ -169,28 +170,23 @@
                 </div>    
                 <div class="container pagina">
                     <h4 class="my-4">Slideshow 1</h4>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
+                    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="d-block w-100" alt="...">
+                            <img src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1060&t=st=1685645029~exp=1685645629~hmac=3a062f43f3a6a13a34de6beed8902343c8a6abbce984b6ef92ac22d40f3c0fc1" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="d-block w-100" alt="...">
+                            <img src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.jpg?w=996&t=st=1685645138~exp=1685645738~hmac=12f77f929b7a9ed4229409f64044da02b3b2f182223fc1094b959fc9b7478318" class="d-block w-100" alt="...">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
@@ -209,7 +205,7 @@
                                 </li>
                                 <li class="splide__slide w-2">
                                     <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <img src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.jpg?w=996&t=st=1685645138~exp=1685645738~hmac=12f77f929b7a9ed4229409f64044da02b3b2f182223fc1094b959fc9b7478318" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
@@ -217,7 +213,7 @@
                                 </li>
                                 <li class="splide__slide w-2">
                                     <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <img src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1060&t=st=1685645029~exp=1685645629~hmac=3a062f43f3a6a13a34de6beed8902343c8a6abbce984b6ef92ac22d40f3c0fc1" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
@@ -225,7 +221,7 @@
                                 </li>
                                 <li class="splide__slide w-2">
                                     <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <img src="https://img.freepik.com/fotos-gratis/empresarios-estao-fazendo-um-brainstorming_53876-137640.jpg?w=996&t=st=1685645200~exp=1685645800~hmac=04050646c62320e48cfec99d7a09e0d1cde9faa5cc625d82ff132724cc97a1ea" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
@@ -233,7 +229,7 @@
                                 </li>
                                 <li class="splide__slide w-2">
                                     <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <img src="https://img.freepik.com/fotos-gratis/objectivos-de-meta-de-sucesso-estrategico-de-estrategia-de-negocios_1421-33.jpg?w=996&t=st=1685645214~exp=1685645814~hmac=b09443b8872d687c20e50d18ff24d95a99e1f80d171077f84e1a0bb58e5b2359" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
@@ -241,7 +237,7 @@
                                 </li>
                                 <li class="splide__slide w-2">
                                     <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <img src="https://img.freepik.com/fotos-gratis/empresarios-que-trabalham-em-financas-e-contabilidade-analisar-financas_74952-1411.jpg?w=996&t=st=1685645239~exp=1685645839~hmac=a97df24be7a45bed81419bd90e14d3dcac3c22d9e9ad7ce0c6b9856bf65139d4" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
@@ -316,8 +312,8 @@
                     <div class="shadow-lg p-3 mb-5 bg-body rounded">Sombra grande</div>
                 </div>   
             </section>
-            <!-- Paginação do print-->
-            <footer class="text-center no-print container">
+            <!-- Paginação-->
+            <footer class="text-center no-print d-flex justify-content-center mx-auto">
                 <ul class="pagination">
     
                 </ul>
@@ -327,12 +323,16 @@
         <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
         <!--Jquery-->
         <script src="../assets/js/jquery-3.6.0.min.js"></script>
-
+        <!--Print e template config-->
         <script src="../assets/print/print.js"></script>
         <script src="../assets/print/template.config.js"></script>
+         <!--Audio customizado-->
         <script src="../assets/js/audio-player.js"></script>
+        <!--Splide - mais opções de slideshow-->
         <script src="../assets/js/splide.min.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
         <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
         <script src="../assets/js/geral.js"></script>
 
         <script>
@@ -350,7 +350,7 @@
             });
         </script>
 
-        <!-- Versao atual do handtalk -->
+        <!-- Handtalk -->
         <script>
             var scriptElem=document.createElement("script");
             scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
