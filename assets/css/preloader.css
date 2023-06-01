@@ -17,13 +17,13 @@
         background-position: 0;
     }
     to{
-        background-position: -1393px;
+        background-position: -1420px;
     }
 }
 .preloader .anim{
-    background-image: url(../img/sesc_preloader.png);
+    background-image: url(../images/senac_loader.png);
     width: 233px;
-    height: 233px;
+    height: 235px;
     animation: preloaderAnim 800ms steps(6) infinite;
     background-repeat: no-repeat;
     margin-bottom: 2rem;

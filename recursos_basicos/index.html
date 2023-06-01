@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../assets/fa/css/all.min.css">
         <link rel="stylesheet" href="../assets/print/print.css">
         <link rel="stylesheet" href="../assets/css/splide.min.css">
+        <link rel="stylesheet" href="../assets/css/tecnicos_senac.css">
     
 
     </head>
@@ -198,7 +199,7 @@
                     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide w-2 mx-2">
+                                <li class="splide__slide w-2">
                                     <div class="card">
                                         <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
@@ -206,7 +207,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="splide__slide w-2 mx-2">
+                                <li class="splide__slide w-2">
                                     <div class="card">
                                         <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
@@ -214,7 +215,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="splide__slide w-2 mx-2">
+                                <li class="splide__slide w-2">
                                     <div class="card">
                                         <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
@@ -222,7 +223,23 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="splide__slide w-2 mx-2">
+                                <li class="splide__slide w-2">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide w-2">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide w-2">
                                     <div class="card">
                                         <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
@@ -311,14 +328,6 @@
         <!--Jquery-->
         <script src="../assets/js/jquery-3.6.0.min.js"></script>
 
-        <!-- print legado dos técnicos -->
-        <!-- descomentar essa linha caso queira um print.css e um leitor.css exclusivo para o conteudo ao usar o botao imprimir-->
-        <!--
-        <script>
-            var custom_print_path = 'assets/css/';
-            var custom_leitor_path = 'assets/css/';
-        </script>    
-        -->   
         <script src="../assets/print/print.js"></script>
         <script src="../assets/print/template.config.js"></script>
         <script src="../assets/js/audio-player.js"></script>
@@ -328,9 +337,10 @@
 
         <script>
             var splide = new Splide( '.splide', {
-                type     : 'loop',
-                perPage: 3,
-                focus    : 'center'
+                type   : 'slide',
+                perPage: 2,
+                trimSpace: false,
+                focus  : 'center'
             } );
 
             splide.mount();
