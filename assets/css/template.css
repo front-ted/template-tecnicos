@@ -1,0 +1,123 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: "figtree";
+    src: url("../fonts/Figtree-Regular.ttf");
+}
+@font-face {
+    font-family: "figtree-italic";
+    src: url("../fonts/Figtree-Italic.ttf");
+}
+@font-face {
+    font-family: "figtree-bold";
+    src: url("../fonts/Figtree-Bold.ttf");
+}
+
+h1{
+    padding: 40px 0;
+    padding-left: 210px;
+    text-transform: uppercase;
+    font-size: 37px;
+    font-family: figtree-bold;
+    background: url('../images/asset_circulo.svg') no-repeat left -120px center, 
+    url('../images/senac_logo.svg') no-repeat right 50px center;
+}
+h2, h3, h4, h5{
+	margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: figtree-bold;
+}
+h2{
+    margin-left: -130px;
+    font-size: 35px;
+}
+h3{
+    margin-left: -20px;
+    font-size: 23px;
+}
+h4{font-size: 18px;}
+h5{font-size: 17px;}
+p, li, th, td, a{
+    font-family: figtree;
+    font-size: 16px;
+}
+b, strong{font-family: figtree-bold;}
+i, blockquote p, blockquote, em{font-family: figtree-italic;}
+p{margin-bottom: 30px;}
+.container{
+    max-width: 900px;
+    position: relative;
+}
+h1{color: #fff;}
+
+/*footer*/
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events: none;
+	margin: 0 1px;
+}
+.pagination li a:visited {color: #ccc;}
+
+
+/*classe para borda arredondada*/
+.radius{border-radius: 25px;}
+
+/*classe que aplica gradiente primario na div das imagens*/
+.borda-colorida{
+    position: relative;
+}
+.borda-colorida img{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+/*tabela*/
+table{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+thead th{
+    color: #fff;
+    padding: 5px 20px;
+}
+td{
+    border-bottom: 3px solid #1e8cb1;
+    border-left: 5px solid #fff;
+    padding: 10px 20px;
+    line-height: 20px;
+}
+tbody td:first-child{border-left: 0;}
+
+/*painel gaitinha ou accordion*/
+.accordion-button, .accordion-button:not(.collapsed){
+    color: #fff;
+    border-radius: 15px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+.accordion-item, .accordion-item:first-of-type{
+    border: none;
+    margin-bottom: 15px;
+}
+.accordion-button::after{
+    filter: invert(1);
+}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-body{
+    margin-left: 20px;
+    border-left: 3px solid #1e8cb1;
+}
+
+
+
+.accordion-header, .card-title{margin-top: 0;}
+
+@media screen and (max-width: 1580px){
+    h1, h2, h3{
+        margin-left: 0;
+    }
+}

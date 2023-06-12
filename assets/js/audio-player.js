@@ -37,7 +37,7 @@
 AudioPlayer = {
     init: function(){
         //aqui eu verifico se existem estruturas de player com a classe .sesc-audio-player, e então trato as funcionalidades da cada player          
-        Array.from(document.querySelectorAll('.sesc-audio-player')).forEach(function(el){
+        Array.from(document.querySelectorAll('.audio-player')).forEach(function(el){
             let btPlay = el.querySelector('.btn-play');
             let btPause = el.querySelector('.btn-pause');
             let seek = el.querySelector('input');

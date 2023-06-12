@@ -10,7 +10,6 @@
     z-index: 9999;
     left: 0;
     top: 0;
-    
 }
 @keyframes preloaderAnim {
     from{
@@ -28,7 +27,7 @@
     background-repeat: no-repeat;
     margin-bottom: 2rem;
 }
-.preloader h1{
+.preloader p{
     font-size: 1.4rem;
     font-family: sans-serif;
     font-weight: bolder;
