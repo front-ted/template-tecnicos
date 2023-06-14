@@ -60,17 +60,20 @@ h1{color: #fff;}
 .pagination li a:visited {color: #ccc;}
 
 
-/*classe para borda arredondada*/
+/*classe para borda arredondada padrão*/
 .radius{border-radius: 25px;}
 
-/*classe que aplica gradiente primario na div das imagens*/
-.borda-colorida{
-    position: relative;
+/*classe de sombra padrão*/
+.shadow{
+    -webkit-box-shadow: 9px 11px 26px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 26px -20px rgba(0,0,0,0.75);
+    box-shadow: 9px 11px 26px -20px rgba(0,0,0,0.75);
 }
-.borda-colorida img{
-    position: absolute;
-    top: 15px;
-    left: 20px;
+
+/*classe que aplica gradiente primário na div que fica por trás das imagens*/
+.borda-colorida{
+  border: 20px solid transparent;
+  border-radius: 50px;
 }
 
 /*tabela*/
@@ -112,7 +115,70 @@ tbody td:first-child{border-left: 0;}
     border-left: 3px solid #1e8cb1;
 }
 
+/*slideshow - carousel*/
+/*carousel bootstrap*/
+.carousel-inner{overflow: unset;}
+.carousel-control-prev, .carousel-control-next, 
+.splide__arrow, .splide__arrow:disabled{
+    height: 31px;
+    width: 31px;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.carousel-control-prev{
+    background: url('../images/seta_esq.svg') no-repeat;
+    left: -50px;
+}
+.carousel-control-next{
+    background: url('../images/seta_dir.svg') no-repeat;
+    right: -50px;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+    bottom: -50px;
+}
+.carousel-indicators [data-bs-target]{
+    height: 22px;
+    width: 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    opacity: 1;
+    background-color: #fff;
+}
 
+
+
+/*splide carousel*/
+.container-fluid .splide .splide__slide{margin-right: 100px;}
+.splide .card-body{
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+.splide .card:hover .card-body{
+    opacity: 1;
+}
+.splide .card{
+    position: relative;
+    border-radius: unset;
+    border: none;
+    background: none;
+    margin-bottom: 30px;
+}
+.splide .card .card-body{
+    position: absolute;
+    bottom: 44px;
+    background: #fff;
+    width: calc(95% - 2px);
+    border: none;
+    left: 20px;
+    border-radius: 0 0 25px 25px;
+}
+.splide__arrows svg{display: none;}
+.splide__arrow--prev{background: url('../images/seta_esq.svg') no-repeat;}
+.splide__arrow--next{background: url('../images/seta_dir.svg') no-repeat;}
 
 .accordion-header, .card-title{margin-top: 0;}
 

@@ -77,8 +77,8 @@
                     <h2>Figura</h2>
                     <!--a estrutura das figuras deve ser essa, com essas classes para manter o padrão de funcionamento e estética, caso precise que seja adicionada uma classe para estilo específico-->
                     <figure class="my-5">
-                        <div class="figure-img borda-colorida mx-auto radius mb-4">
-                            <img class="img-fluid d-block radius" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
+                        <div class="figure-img mx-auto mb-4">
+                            <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
                         </div>
                         <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
                     </figure>
@@ -156,148 +156,136 @@
                         </div>
                     </div>
                 </div>    
-                <div class="container pagina">
-                    <h2>Slideshow 1</h2>
-                    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="borda-colorida mx-auto radius mb-4">
-                                <img class="img-fluid d-block radius" src="https://img.freepik.com/fotos-gratis/mulher-jovem-e-bonita-trabalhando-em-um-laptop_197531-33969.jpg?w=996&t=st=1686326174~exp=1686326774~hmac=6b3d0f66d9036d085d549421724b291802bcb92e5ec314a605b5f9fc246bf688">
+                <div class="pagina">
+                    <div class="container">
+                        <h2>Slideshow 1</h2>
+                        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/conceito-de-educacao-estudante-estudando-e-brainstorming-conceito-de-campus-perto-de-estudantes-discutindo-seu-assunto-em-livros-ou-livros-didaticos-foco-seletivo_1418-627.jpg?w=996&t=st=1686326208~exp=1686326808~hmac=dcc9695d4f73560fff9411e57b5c561af4480fbca0fe2a70efd6b3e6e4fb4043" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/foto-interna-de-um-estudante-feliz-do-sexo-masculino-com-cabelo-encaracolado-vestido-casualmente-sentado-na-cafeteria-trabalhando-com-tecnologias-modernas-enquanto-estuda-olhando-com-um-sorriso-no-caderno-recebendo-mensagem-de-um-amigo_273609-7468.jpg?w=996&t=st=1686326251~exp=1686326851~hmac=ee377c4fc608c7260081e7afafd2eef823bb35aa5a5e385741c3744b470168cd" class="d-block w-100" alt="...">
-                          </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/mulher-jovem-e-bonita-trabalhando-em-um-laptop_197531-33969.jpg?w=996&t=st=1686326174~exp=1686326774~hmac=6b3d0f66d9036d085d549421724b291802bcb92e5ec314a605b5f9fc246bf688">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/conceito-de-educacao-estudante-estudando-e-brainstorming-conceito-de-campus-perto-de-estudantes-discutindo-seu-assunto-em-livros-ou-livros-didaticos-foco-seletivo_1418-627.jpg?w=996&t=st=1686326208~exp=1686326808~hmac=dcc9695d4f73560fff9411e57b5c561af4480fbca0fe2a70efd6b3e6e4fb4043">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/foto-interna-de-um-estudante-feliz-do-sexo-masculino-com-cabelo-encaracolado-vestido-casualmente-sentado-na-cafeteria-trabalhando-com-tecnologias-modernas-enquanto-estuda-olhando-com-um-sorriso-no-caderno-recebendo-mensagem-de-um-amigo_273609-7468.jpg?w=996&t=st=1686326251~exp=1686326851~hmac=ee377c4fc608c7260081e7afafd2eef823bb35aa5a5e385741c3744b470168cd">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"></button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                        <h2>Slideshow 2</h2>
                     </div>
-                    <h4>Slideshow 2</h4>
-                    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="container-fluid">
+                        <div class="splide" role="group">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d">
+                                            <div class="card-body">
+                                                <p class="card-text">Legenda da imagem aparece ao passar o mouse por cima.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.jpg?w=996&t=st=1685645138~exp=1685645738~hmac=12f77f929b7a9ed4229409f64044da02b3b2f182223fc1094b959fc9b7478318" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.jpg?w=996&t=st=1685645138~exp=1685645738~hmac=12f77f929b7a9ed4229409f64044da02b3b2f182223fc1094b959fc9b7478318">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1060&t=st=1685645029~exp=1685645629~hmac=3a062f43f3a6a13a34de6beed8902343c8a6abbce984b6ef92ac22d40f3c0fc1" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1060&t=st=1685645029~exp=1685645629~hmac=3a062f43f3a6a13a34de6beed8902343c8a6abbce984b6ef92ac22d40f3c0fc1">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/empresarios-estao-fazendo-um-brainstorming_53876-137640.jpg?w=996&t=st=1685645200~exp=1685645800~hmac=04050646c62320e48cfec99d7a09e0d1cde9faa5cc625d82ff132724cc97a1ea" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/empresarios-estao-fazendo-um-brainstorming_53876-137640.jpg?w=996&t=st=1685645200~exp=1685645800~hmac=04050646c62320e48cfec99d7a09e0d1cde9faa5cc625d82ff132724cc97a1ea">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/objectivos-de-meta-de-sucesso-estrategico-de-estrategia-de-negocios_1421-33.jpg?w=996&t=st=1685645214~exp=1685645814~hmac=b09443b8872d687c20e50d18ff24d95a99e1f80d171077f84e1a0bb58e5b2359" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide w-2">
-                                    <div class="card">
-                                        <img src="https://img.freepik.com/fotos-gratis/empresarios-que-trabalham-em-financas-e-contabilidade-analisar-financas_74952-1411.jpg?w=996&t=st=1685645239~exp=1685645839~hmac=a97df24be7a45bed81419bd90e14d3dcac3c22d9e9ad7ce0c6b9856bf65139d4" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h4>Modal simples</h4>   
-                    <!-- Button trigger modal -->
-                    <button type="button" class="botao" data-bs-toggle="modal" data-bs-target="#modal1">
-                        Modal simples
-                    </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal simples</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <h4>Modal 100%</h4>   
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
-                        Modal 100%
-                    </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal 100%</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="container">
+                        <h4>Modal simples</h4>   
+                        <!-- Button trigger modal -->
+                        <button type="button" class="botao" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Modal simples
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal simples</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <h4>Modal 100%</h4>   
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Modal 100%
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal 100%</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Tooltip</h4>
+                        <p>Palavra com 
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Descrição da palavra">
+                                tooltip
+                            </button>.
+                        </p>
+                        
+                        <h4>Bordas arredondadas</h4>
+                        <button type="button" class="btn btn-primary rounded-pill">Formato pílula</button>
+                        <button type="button" class="btn btn-primary rounded-3">Formato normal</button>
+        
+                        <h4>Sombras</h4>
+                        <div class="shadow-sm p-3 mb-5 bg-body rounded">Sombra pequena</div>
+                        <div class="shadow p-3 mb-5 bg-body rounded">Sombra média</div>
+                        <div class="shadow-lg p-3 mb-5 bg-body rounded">Sombra grande</div>
                     </div>
-                    <h4>Tooltip</h4>
-                    <p>Palavra com 
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Descrição da palavra">
-                            tooltip
-                        </button>.
-                    </p>
-                    
-                    <h4>Bordas arredondadas</h4>
-                    <button type="button" class="btn btn-primary rounded-pill">Formato pílula</button>
-                    <button type="button" class="btn btn-primary rounded-3">Formato normal</button>
-    
-                    <h4>Sombras</h4>
-                    <div class="shadow-sm p-3 mb-5 bg-body rounded">Sombra pequena</div>
-                    <div class="shadow p-3 mb-5 bg-body rounded">Sombra média</div>
-                    <div class="shadow-lg p-3 mb-5 bg-body rounded">Sombra grande</div>
                 </div>
                 <div class="pagina container">
                 </div>   
