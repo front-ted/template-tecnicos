@@ -29,19 +29,24 @@
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-thead, .accordion-button{
+thead, .accordion-button, .modal-header{
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
 
 /*elementos que levam a cor primária*/
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body{
 	border-color: var(--cor-primaria);
 }
-.carousel-indicators [data-bs-target].active{
+.carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active{
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
+.botao{
+	border-color: var(--cor-primaria);
+	color: var(--cor-primaria);
+}
+.hvr-sweep-to-right:before{background: var(--cor-primaria);}
 
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}

@@ -45,6 +45,7 @@ p, li, th, td, a{
 b, strong{font-family: figtree-bold;}
 i, blockquote p, blockquote, em{font-family: figtree-italic;}
 p{margin-bottom: 30px;}
+
 .container{
     max-width: 900px;
     position: relative;
@@ -139,7 +140,7 @@ tbody td:first-child{border-left: 0;}
     margin-bottom: 0;
     bottom: -50px;
 }
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target], .splide__pagination__page{
     height: 22px;
     width: 22px;
     border-width: 2px;
@@ -169,7 +170,7 @@ tbody td:first-child{border-left: 0;}
 }
 .splide .card .card-body{
     position: absolute;
-    bottom: 44px;
+    bottom: 20px;
     background: #fff;
     width: calc(95% - 2px);
     border: none;
@@ -179,6 +180,48 @@ tbody td:first-child{border-left: 0;}
 .splide__arrows svg{display: none;}
 .splide__arrow--prev{background: url('../images/seta_esq.svg') no-repeat;}
 .splide__arrow--next{background: url('../images/seta_dir.svg') no-repeat;}
+.splide__pagination{
+    bottom: -20px;
+}
+.splide__pagination__page.is-active{transform: unset;}
+
+/*estilo de botão padrão*/
+.botao{
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    background: #fff;
+    padding: 10px 25px;
+    overflow: hidden;
+}
+
+/*modais*/
+.modal-header{
+    border-bottom: unset;
+    border-radius: 25px 25px 0 0;
+}
+.modal-header h5{
+    margin-top: 0;
+    color: #fff;
+    padding: 5px 20px;
+}
+.modal-header .btn-close{
+    filter: invert(1);
+    opacity: 1;
+}
+.btn-close:focus{box-shadow: unset;}
+.modal-body{
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px 40px;
+    border-radius: 0 0 25px 25px;
+    background: #fff;
+}
+.modal-content{
+    border: unset;
+    background: unset
+}
+
 
 .accordion-header, .card-title{margin-top: 0;}
 
