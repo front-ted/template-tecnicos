@@ -96,6 +96,7 @@ td{
 tbody td:first-child{border-left: 0;}
 
 /*painel gaitinha ou accordion*/
+.accordion-header{margin-top: 0;}
 .accordion-button, .accordion-button:not(.collapsed){
     color: #fff;
     border-radius: 15px !important;
@@ -118,6 +119,7 @@ tbody td:first-child{border-left: 0;}
 
 /*slideshow - carousel*/
 /*carousel bootstrap*/
+.carousel{margin-bottom: 100px;}
 .carousel-inner{overflow: unset;}
 .carousel-control-prev, .carousel-control-next, 
 .splide__arrow, .splide__arrow:disabled{
@@ -149,8 +151,6 @@ tbody td:first-child{border-left: 0;}
     opacity: 1;
     background-color: #fff;
 }
-
-
 
 /*splide carousel*/
 .container-fluid .splide .splide__slide{margin-right: 100px;}
@@ -219,11 +219,78 @@ tbody td:first-child{border-left: 0;}
 }
 .modal-content{
     border: unset;
-    background: unset
+    background: unset;
+}
+.modal-dialog-centered .modal-content::before{
+    content: '';
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
 }
 
+/*tooltip e popover*/
+.bt-tooltip{
+    border: none;
+    border-bottom: 2px dashed;
+    background: none;
+}
+.popover-header{
+    margin-top: 0;
+    color: #fff;
+}
 
-.accordion-header, .card-title{margin-top: 0;}
+/*painel de abas*/
+.nav-tabs{border: none;}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-bottom: none;
+}
+.tab-content{
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 0 25px 25px 25px;
+}
+.nav-tabs .nav-link{
+    padding: 10px 40px;
+    border-radius: 25px 25px 0 0;
+    font-weight: bold;
+    color: #fff;
+    border-width: 3px;
+    border-bottom:unset;
+    margin-bottom: -2px;
+}
+
+/*caixas de destaque*/
+.paragrafo-destaque{
+    padding: 40px;
+    font-size: 24px;
+}
+.destaque{
+    border-radius: 25px;
+    margin: 40px 0;
+    padding: 40px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.grafismo::after{
+    content: '';
+    display: block;
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    bottom: -50px;
+    right: -60px;
+    z-index: 1;
+    position: absolute;
+}
+.destaque p:last-child{margin-bottom: 0;}
+.destaque.gradiente p{color: #fff;}
 
 @media screen and (max-width: 1580px){
     h1, h2, h3{
