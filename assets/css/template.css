@@ -199,11 +199,12 @@ tbody td:first-child{border-left: 0;}
 /*estilo de botão padrão*/
 .botao{
     border-radius: 25px;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     background: #fff;
     padding: 10px 25px;
     overflow: hidden;
+    font-weight: bold;
 }
 
 /*modais*/
@@ -303,7 +304,6 @@ tbody td:first-child{border-left: 0;}
     width: 211px;
     bottom: -50px;
     right: -60px;
-    z-index: -1;
     position: absolute;
 }
 .destaque p:last-child{margin-bottom: 0;}
@@ -313,15 +313,69 @@ tbody td:first-child{border-left: 0;}
 }
 .destaque.icone::before{
     content: '';
-    display: block;
-    background: url('../images/ico_importante_atencao.svg') no-repeat;
-    height: 130px;
-    width: 135px;
+    display: block;    
+    height: 87px;
+    width: 86px;
     position: absolute;
     bottom: 0;
     top: 0;
     margin: auto;
     left: -60px;
+}
+
+/*ÍCONES*/
+.destaque.icone.atencao::before,
+.destaque.icone.importante::before{background: url('../images/ico_atencao.svg') no-repeat;}
+.destaque.icone.dica::before{background: url('../images/ico_dica.svg') no-repeat;}
+.destaque.icone.refletir::before{background: url('../images/ico_refletir.svg') no-repeat;}
+.destaque.icone.pergunta::before{background: url('../images/ico_pergunta.svg') no-repeat;}
+.destaque.icone.pesquisar::before{background: url('../images/ico_pesquisar.svg') no-repeat;}
+.destaque.icone.saibamais::before{background: url('../images/ico_saibamais.svg') no-repeat;}
+.destaque.icone.observacao::before{background: url('../images/ico_observacao.svg') no-repeat;}
+.destaque.icone.relembrar::before{background: url('../images/ico_relembrar.svg') no-repeat;}
+.destaque.icone.download::before{background: url('../images/ico_download.svg') no-repeat;}
+.destaque.icone.exemplo::before{background: url('../images/ico_exemplo.svg') no-repeat;}
+.destaque.icone.atividade::before{background: url('../images/ico_atividade.svg') no-repeat;}
+.destaque.icone.visualizar::before{background: url('../images/ico_visualizar.svg') no-repeat;}
+.destaque.icone.conclusao::before{background: url('../images/ico_concluindo.svg') no-repeat;}
+
+/*box de atividade*/
+.box-atividade::before{
+    content: '';
+    display: block;
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    top: -60px;
+    left: -40px;
+    z-index: -1;
+    position: absolute;
+}
+.box-atividade::after{
+    content: '';
+    display: block;    
+    height: 130px;
+    width: 135px;
+    position: absolute;
+    top: -50px;
+    margin: auto;
+    left: 0;
+    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+}
+.box-atividade{
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    padding: 40px;
+    margin: 80px auto;
+    position: relative;
+}
+.titulo-ativ{
+    font-family: figtree-bold;
+    font-size: 18px;
+    margin-left: 100px;
 }
 
 @media screen and (max-width: 1200px){

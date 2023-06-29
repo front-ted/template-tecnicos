@@ -14,14 +14,12 @@
         <link rel="stylesheet" href="../assets/css/animate.min.css" />
         <!-- hover.css https://ianlunn.github.io/Hover/ -->
         <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
         <!-- Print -->
         <link rel="stylesheet" href="../assets/print/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
         <link rel="stylesheet" href="../assets/css/template.css">
@@ -56,8 +54,68 @@
             </div>         
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
-                <div class="pagina">
-                    
+                <div class="pagina container">
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Verdadeiro ou falso</strong></p>
+                        <p>Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">1) Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                                <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                        </div>
+                        <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">2) Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Verdadeiro</button>
+                                <button class="alt-e botao hvr-grow-shadow">Falso</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Múltipla escolha</strong></p>
+                        <p>Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        <div class="esquemaDaBru multipla-escolha">
+                            <p class="enunciado" tabindex="0">1) Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</p>
+                            <button class="alt-c">Alternativa A. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</button>
+                            <button class="alt-e">Alternativa B. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</button>
+                            <button class="alt-e">Alternativa C. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</button>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                        </div>
+                        <div class="esquemaDaBru multipla-escolha">
+                            <p class="enunciado" tabindex="0">2) Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</p>
+                            <button class="alt-e">Alternativa A. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</button>
+                            <button class="alt-c">Alternativa B. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</button>
+                            <button class="alt-e">Alternativa C. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla.</button>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Arrasta e solta</strong></p>
+                    </div>
                 </div> 
             </section>
             <!-- Paginação-->
@@ -74,12 +132,8 @@
         <!--Print e template config-->
         <script src="../assets/print/print.js"></script>
         <script src="../assets/print/template.config.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
         <!--Scripts gerais-->
         <script src="../assets/js/geral.js"></script>
 

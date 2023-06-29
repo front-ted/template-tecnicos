@@ -26,13 +26,15 @@
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-thead, .accordion-button, .modal-header, .destaque.gradiente{
+thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha button::before{
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
 
 /*elementos que levam a cor primária*/
-.carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, .popover, .tab-content{
+.carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, 
+.popover, .tab-content, .multipla-escolha button,
+.f-positivo, .f-negativo{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
