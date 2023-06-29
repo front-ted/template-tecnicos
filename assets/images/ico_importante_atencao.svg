@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="129" viewBox="0 0 132 129">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.304" y1="0.72" x2="0.104" y2="0.764" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b3b4b"/>
+      <stop offset="1" stop-color="#50d7e2"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_303" data-name="Grupo 303" transform="translate(-2029 -345)">
+    <circle id="Elipse_17" data-name="Elipse 17" cx="62.5" cy="62.5" r="62.5" transform="translate(2036 349)" fill="url(#linear-gradient)"/>
+    <g id="Elipse_18" data-name="Elipse 18" transform="translate(2029 345)" fill="none" stroke="#1e8bb0" stroke-width="3">
+      <circle cx="62.5" cy="62.5" r="62.5" stroke="none"/>
+      <circle cx="62.5" cy="62.5" r="61" fill="none"/>
+    </g>
+    <path id="Caminho_27" data-name="Caminho 27" d="M461.836,95.775h15.736v14.166H461.836Zm0-52.339h15.736v44.61H461.836Z" transform="translate(1626 330.811)" fill="#fff"/>
+  </g>
+</svg>

@@ -12,15 +12,18 @@
     font-family: "figtree-bold";
     src: url("../fonts/Figtree-Bold.ttf");
 }
-
+.topo-logo{
+    background: url('../images/asset_circulo.svg') no-repeat left -120px center, 
+    url('../images/senac_logo.svg') no-repeat right 5% center;
+    background-size: auto;
+}
 h1{
     padding: 40px 0;
-    padding-left: 210px;
     text-transform: uppercase;
-    font-size: 37px;
+    font-size: 3vw;
     font-family: figtree-bold;
-    background: url('../images/asset_circulo.svg') no-repeat left -120px center, 
-    url('../images/senac_logo.svg') no-repeat right 50px center;
+    color: #fff;
+    text-align: center;
 }
 h2, h3, h4, h5{
 	margin-bottom: 50px;
@@ -29,11 +32,10 @@ h2, h3, h4, h5{
     font-family: figtree-bold;
 }
 h2{
-    margin-left: -130px;
-    font-size: 35px;
+    margin-left: -30px;
+    font-size: 36px;
 }
 h3{
-    margin-left: -20px;
     font-size: 23px;
 }
 h4{font-size: 18px;}
@@ -47,10 +49,10 @@ i, blockquote p, blockquote, em{font-family: figtree-italic;}
 p{margin-bottom: 30px;}
 
 .container{
-    max-width: 900px;
+    max-width: 960px;
     position: relative;
+    padding: 0 30px;
 }
-h1{color: #fff;}
 
 /*footer*/
 .pagination .active {
@@ -73,7 +75,7 @@ h1{color: #fff;}
 
 /*classe que aplica gradiente primário na div que fica por trás das imagens*/
 .borda-colorida{
-  border: 20px solid transparent;
+  border: 10px solid transparent;
   border-radius: 50px;
 }
 
@@ -86,7 +88,9 @@ table{
 thead th{
     color: #fff;
     padding: 5px 20px;
+    border-right: 5px solid #fff;
 }
+thead th:last-child{border-right: none;}
 td{
     border-bottom: 3px solid #1e8cb1;
     border-left: 5px solid #fff;
@@ -99,7 +103,7 @@ tbody td:first-child{border-left: 0;}
 .accordion-header{margin-top: 0;}
 .accordion-button, .accordion-button:not(.collapsed){
     color: #fff;
-    border-radius: 15px !important;
+    border-radius: 30px 30px !important;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
@@ -167,15 +171,22 @@ tbody td:first-child{border-left: 0;}
     border: none;
     background: none;
     margin-bottom: 30px;
+    transition: all .4s;
+    opacity: .8;
+    transform: scale(.8);
+}
+.splide .is-active .card{
+    opacity: 1;
+    transform: scale(1);
 }
 .splide .card .card-body{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     background: #fff;
-    width: calc(95% - 2px);
+    width: calc(100% - 20px);
     border: none;
-    left: 20px;
-    border-radius: 0 0 25px 25px;
+    left: 10px;
+    border-radius: 0 0 40px 40px;
 }
 .splide__arrows svg{display: none;}
 .splide__arrow--prev{background: url('../images/seta_esq.svg') no-repeat;}
@@ -230,6 +241,10 @@ tbody td:first-child{border-left: 0;}
     bottom: -50px;
     left: -60px;
 }
+.modal-footer{border-top: unset;}
+.modal-fullscreen .modal-body{
+    border-radius: 0;
+}
 
 /*tooltip e popover*/
 .bt-tooltip{
@@ -269,15 +284,17 @@ tbody td:first-child{border-left: 0;}
 .paragrafo-destaque{
     padding: 40px;
     font-size: 24px;
+    text-align: center;
 }
 .destaque{
     border-radius: 25px;
-    margin: 40px 0;
+    margin: 50px 0;
     padding: 40px;
     background: #fff;
     position: relative;
     z-index: 2;
 }
+.grafismo{position: relative;}
 .grafismo::after{
     content: '';
     display: block;
@@ -286,14 +303,56 @@ tbody td:first-child{border-left: 0;}
     width: 211px;
     bottom: -50px;
     right: -60px;
-    z-index: 1;
+    z-index: -1;
     position: absolute;
 }
 .destaque p:last-child{margin-bottom: 0;}
 .destaque.gradiente p{color: #fff;}
+.destaque.icone{
+    padding-left: 90px;
+}
+.destaque.icone::before{
+    content: '';
+    display: block;
+    background: url('../images/ico_importante_atencao.svg') no-repeat;
+    height: 130px;
+    width: 135px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: -60px;
+}
 
-@media screen and (max-width: 1580px){
-    h1, h2, h3{
-        margin-left: 0;
+@media screen and (max-width: 1200px){
+    h2{margin-left: 0;}
+    .container-fluid .splide .splide__slide{
+        width: 80% !important;
+    }
+    .grafismo::after{
+        right: -30px;
+    }
+}
+@media screen and (max-width: 780px){
+    h1{font-size: 5vw;}
+    .topo-logo{
+        background-size: auto, 14%;
+    }
+    .destaque.icone{
+        margin-top: 90px;
+        padding-left: 40px;
+        padding-top: 80px;
+    }
+    .destaque.icone::before{
+        top: -60px;
+        bottom: unset;
+        left: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 580px){
+    .topo-logo{
+        background-size: 47%, 14%;
+        background-position: left -155px center, right 5% center;
     }
 }
