@@ -1,110 +1,100 @@
-.item {
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #ff9200;
+.game-associar-colunas .itens{
+    counter-reset: itens;
+}
+.game-associar-colunas button.item {
+    padding: 10px 20px;
+    border-radius: 10px;
     color: white;
     display: flex;
     align-content: center;
-    gap: 10px;
     align-items: center;
     align-content: center;
-    border: 2px solid #ff9200;
+    border-width: 3px;
+    border-style: solid;
     font-weight: bold;
+    counter-increment: itens;
+    transition: all .4s;
 }
-.selecionado {
-    border: 2px solid #1c72e0 !important;
+.game-associar-colunas button.item:hover, .game-associar-colunas button.selecionado,
+.resp:hover, .resp.selecionado {
+    color: #000;
+    background:#fff !important;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    cursor: pointer;
 }
-.item:hover {
-    background-color: #f8b155
-}
-.item::before {
-    content: "";
-    font-size: 30px;
+.game-associar-colunas button.item::before {
+    content: counter(itens, decimal);
+    font-size: 16px;
     font-weight: bold;
-     position: relative;
-  }
-  .item p {
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 0 7px;
+}
+.item p {
     text-align: center;
     width: 100%;
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
-  }
-  .item.acertou {
+    font-size: 18px;
+}
+.game-associar-colunas button.item.acertou {
     border:#008086;
     background-color: #008086;
     border-color: #008086;
-  }
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+}
 .item.errou {
-    border:#e93535;
-    background-color: #e93535;
-}
-.item1::before{
-    content: "1"
-}
-.item2::before{
-    content: "2"
-}
-.item3::before{
-    content: "3"
-}
-.item4::before{
-    content: "4"
-}
-.item5::before{
-    content: "5"
-}
-.item6::before{
-    content: "6"
-}
-.item7::before{
-    content: "7"
-}
-.item8::before{
-    content: "8"
-}
-.item9::before{
-    content: "9"
+    border:#cd6667;
+    background-color: #cd6667;
 }
 .resp {
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     background-color: #fff;
-    border: 2px solid #333; 
+    border-width: 3px;
+    border-style: solid;
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
     align-content: center;
     font-weight: bold;
+    transition: all .4s;
 }
-.resp:hover{
-    background-color:#f2f2f2;
-}
+
 .resp p {
     margin: 0px;
     padding: 0px;
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 18px;
 }
 .resp.acertou {
-    border-radius: 20px;
-    padding: 20px;
     background-color: #008086;
     color: #ffffff;
     border: 3px solid #008086;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
 }
 .resp.errou {
     border-radius: 20px;
     padding: 20px;
-    background-color: #e93535;
-    border-color: #e93535 !important;
+    background-color: #cd6667;
+    border-color: #cd6667 !important;
     color: #ffffff;
 }
 .resp.errou button, .resp.acertou button {
     color: white;
-
 }
 .resp.errou button{
     border-color: #fff !important;
@@ -112,17 +102,14 @@
 .resp.acertou button{
     border-color: #008086 !important;
 }
-
 .txtacao {
     border: 0px;
-    background: none;
-    color: #ff9200;
-    padding: 8px 20px;
-    border: 3px solid #ff9200;
-    border-radius: 100px;
-    font-weight: bold;
-    font-size: 24px;
-  }
+    padding: 0 7px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 40px;
+    font-size: 16px;
+}
 .resp.acertou .txtacao {
     border: 3px solid #fff;
     color: white;
@@ -131,16 +118,9 @@
     border: 3px solid #fff;
     color: white;
 }
-  .flexs {
+.flexs {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 20px;
-  }
-
-  .modal#associar_colulas_errou .modal-dialog .modal-content .modal-header{
-    background-color: rgb(235, 175, 175) !important;
-    color: darkred;
-    border: 1px solid darkred;
-
-  }
+}

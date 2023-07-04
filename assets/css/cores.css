@@ -26,7 +26,8 @@
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha button::before, .game-titulo{
+thead, .accordion-button, .modal-header, .destaque.gradiente, 
+.multipla-escolha button::before, .game-titulo{
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
@@ -34,7 +35,7 @@ thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha 
 /*elementos que levam a cor primária*/
 .carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, 
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo, .game-body .slot{
+.f-positivo, .f-negativo, .game-body .slo, .resp{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
@@ -42,11 +43,14 @@ thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha 
 	border-left-color: var(--cor-primaria);
 	border-right-color: var(--cor-primaria);
 }
-.carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active{
+.carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
+.game-associar-colunas button.item {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
-.botao, .game-body .card{
+.botao, .game-body .card, .game-associar-colunas button.item:hover::before, 
+.game-associar-colunas button.selecionado, .game-associar-colunas button.selecionado::before,
+.txtacao{
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }

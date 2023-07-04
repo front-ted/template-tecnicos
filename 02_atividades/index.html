@@ -215,9 +215,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -241,9 +238,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +247,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         <div class="game-associar-colunas no-print nao-imprimir">
                             <div class="row">
-                                <div class="col-12 col-sm-4 flexs">
+                                <div class="col-12 col-sm-4 flexs itens">
                                     <button data-resp="1" class="item item1">
                                         <p>GERMÂNIO</p>
                                     </button>
@@ -287,7 +281,7 @@
                                     </button>
                     
                                 </div>
-                                <div class="col-12 col-sm-8 flexs mt-3">
+                                <div class="col-12 col-sm-8 flexs">
                                     <button type="button" data-resp="5" class="resp resp5">
                                         <div class="txtacao"><i class="fas fa-question"></i></div>
                                         <p>FRUTAS E VEGETAIS</p>
@@ -333,24 +327,29 @@
                             <!-- Modal -->
                             <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
                                 aria-labelledby="associarColunasErrou" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered animate__animated animate__bounceIn">
+                                <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasErrou">Ops, tente novamente!</h5>
+                                            <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                    
+                                        <div class="modal-body">
+                                            <p>Ops, tente novamente!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Modal -->
-                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_acertou"
+                            <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
                                 tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered  animate__animated animate__zoomIn animate__faster">
+                                <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasAcertou">Muito bem! Você acertou!</h5>
+                                            <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Muito bem! Você acertou!</p>
                                         </div>
                                     </div>
                                 </div>

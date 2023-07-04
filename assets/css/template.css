@@ -241,6 +241,7 @@ tbody td:first-child{border-left: 0;}
     position: absolute;
     bottom: -50px;
     left: -60px;
+    z-index: -1;
 }
 .modal-footer{border-top: unset;}
 .modal-fullscreen .modal-body{
