@@ -26,7 +26,7 @@
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha button::before{
+thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha button::before, .game-titulo{
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
@@ -34,7 +34,7 @@ thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha 
 /*elementos que levam a cor primária*/
 .carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, 
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo{
+.f-positivo, .f-negativo, .game-body .slot{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
@@ -46,7 +46,7 @@ thead, .accordion-button, .modal-header, .destaque.gradiente, .multipla-escolha 
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
-.botao{
+.botao, .game-body .card{
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }

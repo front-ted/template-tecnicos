@@ -20,6 +20,11 @@
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Atividade de verdadeiro ou falso -->
         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
         <link rel="stylesheet" href="../assets/css/template.css">
@@ -115,6 +120,271 @@
                     </div>
                     <div class="box-atividade">
                         <p class="titulo-ativ"><strong>Arrasta e solta</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        <div id="content-game">
+                            <div class="container-fluid game-body no-print" style="padding:0;">
+                                <div class="row">
+                                    <div id="slots" class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>Caixa 1</p>
+                                                </div>
+                                                <div id="slot-1" class="slot">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 mt-3 mb-3">
+                                                <div class="game-titulo">
+                                                    <p>Caixa 2</p>
+                                                </div>
+                                            <div id="slot-2" class="slot">
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>Caixa 3</p>
+                                            </div>
+                                            <div id="slot-3" class="slot">
+                                            
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                        
+                                    <div id="cardPile" class="game-itens-container">
+                                        <div id="card-1" class="card" data-target="slot-1">
+                                            Concepção do <i>show</i>
+                                        </div>
+                                        
+                                        <div id="card-3" class="card"  data-target="slot-1">
+                                            Definição de equipe
+                                        </div>
+                                        
+                                        <div id="card-5" class="card" data-target="slot-2">
+                                            Ensaios
+                                        </div>
+                                        
+                                        <div id="card-8" class="card" data-target="slot-3">
+                                            Desmontagem
+                                        </div>
+                                        <div id="card-10" class="card" data-target="slot-3">
+                                            Balanço financeiro
+                                        </div>
+                                        <div id="card-11" class="card" data-target="slot-3">
+                                            Finalização do projeto
+                                        </div>
+                                        <div id="card-2" class="card" data-target="slot-1">
+                                            Orçamentos  
+                                        </div>
+                                        <div id="card-4" class="card" data-target="slot-1">
+                                            Definir público-alvo
+                                        </div>
+                                        <div id="card-6" class="card" data-target="slot-2">
+                                            Divulgação
+                                        </div>
+                                        <div id="card-7" class="card" data-target="slot-2">
+                                            Apresentação
+                                        </div>
+                                        <div id="card-9" class="card" data-target="slot-3">
+                                            Pagamentos
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                           
+                        
+                        <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta correta! </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="../assets/atividades/arrasta_solta/acerto.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                                <p>Muito bem! Este item faz parte desta etapa de produção.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-danger">
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="../assets/atividades/arrasta_solta/erro.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                                <p>Este item não faz parte desta etapa de produção. Tente novamente.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        <div class="game-associar-colunas no-print nao-imprimir">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 flexs">
+                                    <button data-resp="1" class="item item1">
+                                        <p>GERMÂNIO</p>
+                                    </button>
+                    
+                                    <button data-resp="2" class="item item2">
+                                        <p>TUNGSTÊNIO</p>
+                                    </button>
+                    
+                                    <button data-resp="3" class="item item3">
+                                        <p>LÍTIO</p>
+                                    </button>
+                    
+                                    <button data-resp="4" class="item item4">
+                                        <p>SÓDIO</p>
+                                    </button>
+                    
+                                    <button data-resp="5" class="item item5">
+                                        <p>POTÁSSIO</p>
+                                    </button>
+                    
+                                    <button data-resp="6" class="item item6">
+                                        <p>CÁLCIO</p>
+                                    </button>
+                    
+                                    <button data-resp="7" class="item item7">
+                                        <p>CLORO</p>
+                                    </button>
+                    
+                                    <button data-resp="8" class="item item8">
+                                        <p>CARBONO</p>
+                                    </button>
+                    
+                                </div>
+                                <div class="col-12 col-sm-8 flexs mt-3">
+                                    <button type="button" data-resp="5" class="resp resp5">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>FRUTAS E VEGETAIS</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="6" class="resp resp6">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>CONCHAS E OSSOS</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="7" class="resp resp7">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>PISCINAS</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="1" class="resp resp1">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>SEMICONDUTORES ELETRÔNICOS</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="8" class="resp resp8">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>BASE DAS MOLÉCULAS DA VIDA</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="4" class="resp resp4">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>SAL</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="2" class="resp resp2">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>FILAMENTO DE LÂMPADAS</p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="3" class="resp resp3">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>BATERIAS</p>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                                aria-labelledby="associarColunasErrou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered animate__animated animate__bounceIn">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasErrou">Ops, tente novamente!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_acertou"
+                                tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered  animate__animated animate__zoomIn animate__faster">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasAcertou">Muito bem! Você acertou!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <!-- Versão para impressão -->
+                        <div class="print-only only-print">
+                            <p>Associe a primeira coluna com a segunda.</p>
+                            <table class="associe-colunas">
+                                <tr>
+                                    <td>
+                                        <p>A) GERMÂNIO</p>
+                                        <p>B) TUNGSTÊNIO</p>
+                                        <p>C) LÍTIO</p>
+                                        <p>D) SÓDIO</p>
+                                        <p>E) POTÁSSIO</p>
+                                        <p>F) CÁLCIO</p>
+                                        <p>G) CLORO</p>
+                                        <p>H) CARBONO</p>
+                                    </td>
+                                    <td>
+                                        <p>(&nbsp;&nbsp;) FRUTAS E VEGETAIS</p>
+                                        <p>(&nbsp;&nbsp;) CONCHAS E OSSOS</p>
+                                        <p>(&nbsp;&nbsp;) PISCINAS</p>
+                                        <p>(&nbsp;&nbsp;) SEMICONDUTORES ELETRÔNICOS</p>
+                                        <p>(&nbsp;&nbsp;) BASE DAS MOLÉCULAS DA VIDA</p>
+                                        <p>(&nbsp;&nbsp;) SAL</p>
+                                        <p>(&nbsp;&nbsp;) FILAMENTO DE LÂMPADAS</p>
+                                        <p>(&nbsp;&nbsp;) BATERIAS</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div> 
             </section>
@@ -134,6 +404,11 @@
         <script src="../assets/print/template.config.js"></script>
         <!--Atividade de verdadeiro ou falso-->
         <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
         <!--Scripts gerais-->
         <script src="../assets/js/geral.js"></script>
 
