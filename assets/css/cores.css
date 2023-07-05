@@ -35,7 +35,7 @@ thead, .accordion-button, .modal-header, .destaque.gradiente,
 /*elementos que levam a cor primária*/
 .carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, 
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo, .game-body .slo, .resp{
+.f-positivo, .f-negativo, .game-body .slot, .resp{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
