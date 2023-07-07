@@ -9,8 +9,8 @@
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
 	linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%) border-box;
 
-	--bg-gradiente-secundario: rgb(11,60,75);
-	--gradiente-secundario: linear-gradient(80deg, rgba(11,60,75,1) 0%, rgba(61,167,180,1) 100%);
+	--bg-gradiente-secundario: rgb(80,215,226);
+	--gradiente-secundario: linear-gradient(60deg, rgba(80,215,226,1) 0%, rgba(46,137,151,1) 18%, rgba(11,59,75,1) 100%);
 
 	--cor-primaria: #1e8cb1;
 	--cor-secundaria: #e0a945;
@@ -26,14 +26,14 @@
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-thead, .accordion-button, .modal-header, .destaque.gradiente, 
-.multipla-escolha button::before, .game-titulo{
+.modal-header, .destaque.gradiente, 
+.multipla-escolha button::before, .game-titulo, .offcanvas{
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
 
 /*elementos que levam a cor primária*/
-.carousel-indicators [data-bs-target], .splide__pagination__page, .modal-body, 
+.carousel-indicators .indicador, .splide__pagination__page, .modal-body, 
 .popover, .tab-content, .multipla-escolha button,
 .f-positivo, .f-negativo, .game-body .slot, .resp{
 	border-color: var(--cor-primaria);
@@ -54,8 +54,8 @@ thead, .accordion-button, .modal-header, .destaque.gradiente,
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }
-.hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link{background: var(--cor-primaria);}
-
+.hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
+thead, .accordion-button, .accordion-button:not(.collapsed){background-color: var(--cor-primaria);}
 
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}

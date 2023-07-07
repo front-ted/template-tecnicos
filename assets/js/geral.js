@@ -11,14 +11,9 @@ window.addEventListener('load', function(){
 
     $('.preloader').fadeOut(300);
 
-
-    // // função que aplica a mesma dimensão da imagem na div de fundo gradiente
-    // $('div.borda-imagem').each(function(){
-    //   var hBordaColorida = $(this).find('img').height();
-    //   var wBordaColorida = $(this).find('img').width();
-    //   $(this).height() = hBordaColorida;
-    //   $(this).width() = wBordaColorida;
-    // });
+    $('.botao').click(function(){
+      $(this).addClass('visitado');
+    });
 })
 
 
