@@ -1,24 +1,16 @@
+@charset "utf-8";
+
 @font-face {
-  font-family: 'Fira Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,700&display=swap');
-}
-@font-face{
-  font-family: 'Fira Sans bold';
-  src: url(../fonts/FiraSans-Bold.otf);
+    font-family: "figtree";
+    src: url("../fonts/Figtree-Regular.ttf");
 }
 @font-face {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  src: url(../fonts/FiraSansCondensed-Light.otf);
+    font-family: "figtree-italic";
+    src: url("../fonts/Figtree-Italic.ttf");
 }
-
-@font-face{
-  font-family: 'Fira Sans Light';
-  src: url(../fonts/FiraSans-Light.otf);
-}
-
-@font-face{
-  font-family: 'Fira Sans Medium';
-  src: url(../fonts/FiraSans-Medium.otf);
+@font-face {
+    font-family: "figtree-bold";
+    src: url("../fonts/Figtree-Bold.ttf");
 }
 
 
@@ -27,7 +19,7 @@
 }
 
 body {
-  background: url(../../assets/bg.png);
+  background: var(--gradiente-primario);
   background-repeat: repeat;
   background-attachment: fixed;
   /* background-size: 100%;
@@ -35,10 +27,11 @@ body {
   width: 100%;
   height: 100vh;
   color: white;
-  font-family: 'Lato';
+  font-family: 'figtree';
   font-weight: 300;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 header {
@@ -47,27 +40,27 @@ header {
 }
 
 h1 {
-  font-family: 'Fira Sans bold' !important;
+  font-family: 'figtree-bold' !important;
   font-weight: bold;
-  font-size: 53px;
+  font-size: 70px;
   color: #ffffff;
   margin-bottom: 0px;
 }
 
 h2 {
-  font-family: 'Fira Sans Light';
+  font-family: 'figtree';
   font-size: 40px;
   color: #ffffff;
   font-weight: 300;
 }
 
 h3 {
-  font-family: 'Fira Sans Medium';
-  font-size: 30px;
+  font-family: 'figtree';
+  font-size: 27px;
   color: #000;
 }
 .h4, h4 {
-  font-family: 'Fira Sans Medium';
+  font-family: 'figtree';
   font-size: 25px;
 }
 hr {
@@ -93,13 +86,32 @@ li p a{
 }
 
 .grupo {
-  background: #f7f7f7;
+  background: #d4eeee;
   border-radius: 10px;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .grupo .drag-column {
   min-height: 220px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.drag-column h3 {
+  background: var(--bg-gradiente-primario);
+  width: 100%;
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.drag-column:first-of-type h3 {
+  border-top-left-radius: 10px;
+}
+.drag-column:last-of-type h3 {
+  border-top-right-radius: 10px;
 }
 .margin50{
   margin-top: 50px;
@@ -114,6 +126,7 @@ li p a{
   padding: 37px 10px 0;
   width: 100%;
   overflow: hidden;
+  height: fit-content;
 }
 
 .border{
@@ -188,13 +201,14 @@ ul {
 
 .drag-inner-list {
   min-height: 150px;
+  padding: 10px;
 }
 
 .drag-item {
   width: 197px;
-  height: 142px;
+  height: 141px;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'figtree', sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #000000;
@@ -202,6 +216,12 @@ ul {
   /* padding: 50px 15px; */
   text-align: center;
   cursor: pointer;
+  background-size: contain;
+  margin: 4px;
+  border-radius: 15px;
+  filter: drop-shadow(2px 2px 4px #333);
+  position: relative;
+  z-index: 1;
 }
 
 .drag-item:hover {
@@ -260,10 +280,12 @@ ul {
     font-size: 30px;
   }
   h3 {
-    background: #f7f7f7;
+    background: #d4eeee;
     margin: 0 0 -1px;
-    padding: 30px 20px;
+    padding: 10px 20px;
     display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .grupo {
     display: block;
@@ -282,8 +304,10 @@ ul {
   .grupo .drag-column {
     min-height: 167px;
     margin-bottom: 50px;
-    background: #f7f7f7;
+    background: #d4eeee;
     overflow-x: scroll;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .visible-xs {
     display: flex !important;
@@ -325,9 +349,12 @@ ul {
   border-radius: 6px;
   left: 88px;
   top: -79px;
-  height: 65px;
+  height: 65px;  
 }
-
+.show {
+  position: relative;
+  z-index: 100;
+}
 .caret {
   display: inline-block;
   width: 45px;
@@ -536,5 +563,45 @@ ul {
   .dropdown.dropdown-bubble{
     width: 195px;
     bottom: 8px;
+  }
+}
+
+/* novo template - LP */
+.circulo-1 {
+  position: absolute;
+  left: -250px;
+  z-index: 2;
+}
+.circulo-1 svg {
+  height: 500px;
+  width: 500px;
+}
+.circulo-2 {
+  background-color: #fed06e;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 260px;
+  left: -125px;
+}
+.circulo-3 {
+  position: absolute;
+  bottom: -250px;
+  right: -140px;
+}
+.circulo-4 {
+  background-color: #fed06e;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
+
+@media screen and (max-width: 1330px) {
+  .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
+    display: none;
   }
 }
