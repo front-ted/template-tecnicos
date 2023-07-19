@@ -411,6 +411,7 @@ tbody td:first-child{border-left: 0;}
     left: 0;
     top: 150px;
     z-index: 2;
+    transition-duration: .2s;
 }
 .offcanvas-header,.offcanvas-body{
     padding: 0;
