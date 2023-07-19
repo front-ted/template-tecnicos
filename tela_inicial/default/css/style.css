@@ -90,6 +90,8 @@ li p a{
   border-radius: 10px;
   display: flex;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .grupo .drag-column {
@@ -230,14 +232,17 @@ ul {
 
 .drag-item.fazer {
   background: url(../../assets/card_a_fazer.png) no-repeat;
+  background-size: contain;
 }
 
 .drag-item.fazendo {
   background: url(../../assets/card_fazendo.png) no-repeat;
+  background-size: contain;
 }
 
 .drag-item.feito {
   background: url(../../assets/card_feito.png) no-repeat;
+  background-size: contain;
 }
 
 .drag-item.is-moving {
@@ -277,7 +282,10 @@ ul {
     margin-bottom: 30px;
   }
   h1{
-    font-size: 30px;
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
   }
   h3 {
     background: #d4eeee;
@@ -347,8 +355,8 @@ ul {
   min-width: 108px;
   padding: 0 9px;
   border-radius: 6px;
-  left: 88px;
-  top: -79px;
+  left: 79px;
+  top: -25px;
   height: 65px;  
 }
 .show {
@@ -394,7 +402,7 @@ ul {
   .drag-item {
     width: 178px;
     height: 123px;
-    background-size: 104% !important;
+    background-size: contain;
   }
 }
 
@@ -570,7 +578,7 @@ ul {
 .circulo-1 {
   position: absolute;
   left: -250px;
-  z-index: 2;
+  z-index: 3;
 }
 .circulo-1 svg {
   height: 500px;
@@ -599,9 +607,39 @@ ul {
   bottom: 50px;
   right: 30px;
 }
+@media screen and (max-width: 1810px) {
+  .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
+    transform: scale(0.7);
+    z-index: 9;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
+    transform: scale(0.5);
+    z-index: 9;
+  }
+  .circulo-1 {
+    left: -300px;
+  }
+  .circulo-2 {
+    top: 150px;
+    z-index: 2;
+  }
+  .circulo-4 {
+    right: 0px;
+    bottom: -100px;
+  }
+}
 
 @media screen and (max-width: 1330px) {
   .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
     display: none;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .grupo {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
