@@ -121,7 +121,7 @@ li p a{
 .drag-column-in-progress {
   border-right-style: dashed;
   border-left-style: dashed;
-  border-color: #102c35;
+  border-color: #fff;
   border-width: 2px;
 }
 .drag-item p {
