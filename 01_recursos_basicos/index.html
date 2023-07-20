@@ -57,7 +57,7 @@
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="pagina container">
-                    <h2>h2 - Título do conteúdo</h2>
+                    <h2>h2 - Título</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                     <h3>h3 - Subtítulo</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
@@ -80,7 +80,9 @@
                     </figure>
 
                     <h3>Podcast</h3>
-                    
+                    <p>Recurso em áudio que pode conferir diálogo ao conteúdo, apresentando, por exemplo, histórias, debates, conceitos, respostas a perguntas, dentre outros tópicos.</p>
+                    <p><b>Objetivos educacionais com os quais combinam:</b> compreender, conhecer e lembrar. </p>
+                    <p><b>Dicas de boa prática:</b> indicar qual personagem o designer deve utilizar (masculino ou feminino, por exemplo) de acordo com a voz solicitada à equipe de audiovisual. Também é necessário identificar o texto para transcrição na análise didática.</p>
                     <div class="bg-podcast no-print">
                         <div class="d-flex justify-content-center flex-column align-items-center">
                             <p>Ouça o <i>podcast</i> a seguir.</p>
@@ -126,49 +128,14 @@
                     </div>
                 </div> 
                 <div class="pagina container">
-                    <h2>Figura</h2>
-                    <!--a estrutura das figuras deve ser essa, com essas classes para manter o padrão de funcionamento e estética, caso precise que seja adicionada uma classe para estilo específico-->
-                    <figure class="my-5">
-                        <div class="figure-img mx-auto mb-4">
-                            <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
-                        </div>
-                        <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
-                    </figure>
-                    <h2>Tabela</h2>
-                    <!--Tabela com largura de colunas igualmente destribuídas usando as classes do bootstrap-->
-                    <div class="table-responsive">
-                        <table class="text-left align-middle">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Coluna 1</th>
-                                    <th class="w-25">Coluna 2</th>
-                                    <th class="w-25">Coluna 3</th>
-                                    <th class="w-25">Coluna 4</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                </tr>
-                                <tr>
-                                    <td>Texto</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. </td>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                </tr>
-                                <tr>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                    <td>Texto</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h4>Painel gaitinha</h4>
+                    <h2>Painéis clicáveis </h2>
+                    <p>Normalmente são utilizados para tópicos ou conceitos com definições de uma mesma classe. Organizam a exibição do conteúdo com certo grau de interatividade e podem ter diferentes formatos, por exemplo, mapa, linha do tempo, prancheta, dentre outros.  </p>
+                    <p><b>Objetivos educacionais com os quais combinam:</b> conhecer e lembrar.</p>
+                    <h2>Painéis gaitinha e de abas </h2>
+                    <p>São utilizados para organizar a apresentação de tópicos e/ou conceitos. É aconselhável utilizar textos curtos nos títulos, principalmente para o painel de abas.</p>
+                    <p><b>Objetivos educacionais com os quais combinam:</b> conhecer e lembrar.</p>
+                    <p><b>Dicas de boa prática:</b> aqui cabe a indicação de vcs quanto ao volume de conteúdo, por exemplo, meia página... </p>
+                    <h3>Painel gaitinha</h3>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -207,10 +174,36 @@
                             </div>
                         </div>
                     </div>
+                    <h3>Painel de abas</h3>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Título 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Título 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Título 3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Texto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Texto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Texto 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
+                    </div>
+
+                    <h2>Infográfico </h2>
+                    <p>Recurso que combina texto e imagem com o objetivo de tornar uma informação mais clara e interessante. Solicitado quando há relação entre texto e imagem e quando existem itens concretos a ilustrar. </p>
+                    <p><b>Objetivos educacionais com os quais combinam:</b> compreender, conhecer e lembrar. </p>
+                    <p><b>Dicas de boa prática:</b> indicar referência na análise didática. seria legal indicar volume de conteúdo </p>
                 </div>    
                 <div class="pagina">
                     <div class="container">
-                        <h2>Slideshow 1</h2>
+                        <h2><i>Slide show</i></h2>
+                        <p>Comumente utilizado quando há uma lista de informações que tenha ou possa ter fotos ou ilustrações e para passo-a-passos. O Conteúdo é apresentado em uma sequência de telas com controle de navegação. Não é recomendado para trechos de conteúdo apenas textual.</p>
+                        <p><b>Objetivos educacionais com os quais combinam:</b> compreender, conhecer e lembrar. </p>
+                        <p><b>Dicas de boa prática:</b> seria legal indicar volume de conteúdo e número de telas limite pensando em experiência do usuário.</p>
+                        <h3>Slideshow 1</h3>
                         <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev"></button>
@@ -232,7 +225,7 @@
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                        <h2>Slideshow 1 sem borda e com sombra</h2>
+                        <h3>Slideshow 1 sem borda e com sombra</h3>
                         <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev"></button>
@@ -348,22 +341,57 @@
                         <h2>Popover</h2>
                         <p>Botão com recurso <button type="button" class="botao hvr-sweep-to-right" data-bs-toggle="popover" title="Título do popover" data-bs-content="Conteúdo do popover que pode conter um parágrafo.">popover</button></p>
         
-                        <h2>Painel de abas</h2>
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Título 1</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Título 2</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Título 3</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Texto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Texto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Texto 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</div>
+                        <h2>Figura</h2>
+                        <!--a estrutura das figuras deve ser essa, com essas classes para manter o padrão de funcionamento e estética, caso precise adicione uma nova classe para estilo específico-->
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block borda-colorida" src="https://img.freepik.com/fotos-gratis/espaco-de-trabalho-organizado-e-organizado-com-laptop_23-2148592327.jpg?w=996&t=st=1686326062~exp=1686326662~hmac=fcac1a0ab6bd3ecd8a894650de3e7d7370b6390ba70fc2567df51352d4f3036f">
+                            </div>
+                            <figcaption class="figure-caption text-center">Legenda e fonte</figcaption>
+                        </figure>
+
+                        <h2>Ilustração</h2>
+                        <p>São imagens desenhadas especificamente para os projetos. Normalmente solicitadas quando se trata de uma situação particular, que não será possível criar uma imagem vetorial ou encontrar a representação exata nos bancos de imagem. </p>
+                        <p><b>Objetivos educacionais com os quais combinam:</b> compreender e aplicar.</p>
+                        <p><b>Dicas de boa prática:</b> indicar referência e comunicar ilustrador sobre contexto e identidade do projeto.</p>
+
+                        <h2>GIF</h2>
+                        <p>Arquivo de imagem que possibilita exibir pequenas animações, sem áudio. Normalmente utilizado quando se trata de um conteúdo breve a ser demonstrado, quando uma imagem estática não é o suficiente e, ao mesmo tempo, não há necessidade de um vídeo com áudio. </p>
+                        <p><b>Objetivos educacionais com os quais combinam:</b> compreender e conhecer. </p>
+                        <p><b>Dicas de boa prática:</b> indicar espera na análise didática e comunicar a equipe de audiovisual sobre contexto e identidade do projeto. </p>
+                        <h2>Tabela</h2>
+                        <!--Tabela com largura de colunas igualmente destribuídas usando as classes do bootstrap-->
+                        <div class="table-responsive">
+                            <table class="text-left align-middle">
+                                <thead>
+                                    <tr>
+                                        <th class="w-25">Coluna 1</th>
+                                        <th class="w-25">Coluna 2</th>
+                                        <th class="w-25">Coluna 3</th>
+                                        <th class="w-25">Coluna 4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Texto</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. </td>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                        <td>Texto</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
