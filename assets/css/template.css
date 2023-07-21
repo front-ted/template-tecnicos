@@ -56,6 +56,12 @@ p{margin-bottom: 30px;}
 }
 
 /*footer*/
+.voltar-topo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 .pagination .active {
     transform: translateY(-8px);
     pointer-events: none;
@@ -332,7 +338,7 @@ tbody td:first-child{border-left: 0;}
 .destaque p:last-child{margin-bottom: 0;}
 .destaque.gradiente p{color: #fff;}
 .destaque.icone{
-    padding-left: 90px;
+    padding-left: 70px;
 }
 .destaque.icone::before{
     content: '';
@@ -343,7 +349,7 @@ tbody td:first-child{border-left: 0;}
     bottom: 0;
     top: 0;
     margin: auto;
-    left: -60px;
+    left: -40px;
 }
 
 /*ÍCONES*/
@@ -360,6 +366,7 @@ tbody td:first-child{border-left: 0;}
 .destaque.icone.exemplo::before{background: url('../images/ico_exemplo.svg') no-repeat;}
 .destaque.icone.atividade::before{background: url('../images/ico_atividade.svg') no-repeat;}
 .destaque.icone.visualizar::before{background: url('../images/ico_visualizar.svg') no-repeat;}
+.destaque.icone.nota::before{background: url('../images/ico_nota.svg') no-repeat;}
 .destaque.icone.conclusao::before{background: url('../images/ico_concluindo.svg') no-repeat;}
 
 /*box de atividade*/
@@ -377,13 +384,14 @@ tbody td:first-child{border-left: 0;}
 .box-atividade::after{
     content: '';
     display: block;    
-    height: 130px;
-    width: 135px;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: -50px;
+    top: -25px;
     margin: auto;
-    left: 0;
+    left: -10px;
     background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background-size: contain;
 }
 .box-atividade{
     border-radius: 30px;
@@ -398,7 +406,7 @@ tbody td:first-child{border-left: 0;}
 .titulo-ativ{
     font-family: figtree-bold;
     font-size: 18px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 /*Menu lateral - hamburguer*/
