@@ -163,6 +163,73 @@ li p a{
   display: none;
 }
 
+.btPrint{
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-image: url(../../assets/printer.svg);
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  background-color: #2d6475;
+}
+.btPrint:hover{
+  transform: scale(1.1);
+}
+.btMenuPrint{
+  padding: 10px 20px;
+  padding-left: 40px;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  border: 0;
+  margin-top: .5rem;
+  background-color: #2d6475;
+  font-weight: 500;
+  background-image: url(../../assets/printer.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.btMenuPrint:hover{
+  transform: scale(1.1) ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
+  background-color: #278dac;
+}
+.menuPrint{
+  border: 0;
+}
+.menuPrint.dropdown-menu li{
+  border: 0;
+  background-image: none !important;
+}
+.menuPrint.dropdown-menu li a::before{
+  background-image: url(../../assets/printer.svg);
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background-color: #2d6475;
+  border-radius: 15px;
+  background-position: center center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-left: -10px;  
+}
+.menuPrint.dropdown-menu li a:hover::before{
+  background-color: #278dac;
+}
+ul.menuPrint.dropdown-menu:before{
+  display: none;
+}
+
+
 @keyframes seta {
   0% {
     width: 0px;

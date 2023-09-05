@@ -135,7 +135,7 @@ $('.mover-feito').click(function(){
 
 })
 
-$('.link').click(function(){
+$('.link').on('click',function(){
 	if ($(this).parent().parent().parent().attr("data-index") == "lista-fazer"){
 		var aux = $(this).parent().parent().parent().attr('id') 
 		var id = parseInt(aux) + 1 
@@ -156,6 +156,15 @@ $('.link').click(function(){
 		
 	
 	}
+})
+
+$('.imprimir').on('click', function(){
+	let printPage = "print/index.html?conteudo=" + $(this).data('conteudo')
+	if($(this).data('imgpath') != undefined)
+		printPage += "&imgpath=" + $(this).data('imgpath')
+	if($(this).data('startpoint') != undefined)
+		printPage += "&startpoint=" + $(this).data('startpoint')
+	window.open(printPage, '_new')
 })
 
 var grupo = ""
@@ -212,6 +221,7 @@ dragula([
 		//localStorage.setItem(uc+"_"+elemento,lista)
 		console.log(el)
 		var i = el.getAttribute('data-item') 
+		console.log("lista:",lista)
 		if (lista == 'lista-fazer') {
 			el.setAttribute('class', 'drag-item fazer')
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazendo").show()

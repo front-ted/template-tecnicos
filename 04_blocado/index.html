@@ -17,7 +17,7 @@
         <!--Splide - slideshow-->
         <link rel="stylesheet" href="../assets/css/splide.min.css">
         <!-- Print -->
-        <link rel="stylesheet" href="../assets/print/print.css">
+        <link rel="stylesheet" href="../assets/css/print.css">
         <!-- Preloader -->
         <link rel="stylesheet" href="../assets/css/preloader.css">
         <!-- Áudio customizado -->
@@ -44,16 +44,7 @@
             </div>
         </header>
         <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">
-            <!-- Div com botão imprimir deve ficar fora da div .paginas e dentro da div #booklet -->
-            <div class="container">
-                <div class="row pt-4">
-                    <div class="col-9"></div>
-                    <div class="col-3 d-flex flex-column justify-content-center align-items-end">
-                        <button data-pdf="true" name="button" class="bt-print no-print"></button>                            
-                    </div>                                       
-                </div>
-            </div>         
+        <section id="booklet">       
             <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
             <section class="paginas">
                 <div class="container pagina">
@@ -393,9 +384,6 @@
         <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
         <!--Jquery-->
         <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Print e template config-->
-        <script src="../assets/print/print.js"></script>
-        <script src="../assets/print/template.config.js"></script>
         <!--Áudio customizado-->
         <script src="../assets/js/audio-player.js"></script>
         <!--Splide - slideshow-->
