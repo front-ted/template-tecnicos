@@ -21,7 +21,7 @@
 	background: var(--bg-gradiente-primario);
 	background: var(--gradiente-primario);
 }
-.borda-colorida{
+.borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
 }
 

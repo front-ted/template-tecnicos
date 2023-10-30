@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="../assets/css/player.css">
         <!-- Estilos do template -->
         <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
         <link rel="stylesheet" href="../assets/css/template.css">
     
     </head>
@@ -78,12 +79,20 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                     
                     <div class="grafismo">
+                        <div class="destaque borda-colorida">
+                            <p>Destaque com fundo e sem ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                    </div>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone atencao">
+                            <p>Destaque com fundo e sem ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                    </div>
+                    <div class="grafismo">
                         <div class="destaque gradiente">
                             <p>Destaque com fundo e sem ícone - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
                     <div class="grafismo">
                         <div class="destaque gradiente icone atencao">
                             <p>ATENÇÃO/IMPORTANTE - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
@@ -224,11 +233,12 @@
                     <p>São imagens desenhadas especificamente para os projetos. Normalmente solicitadas quando se trata de uma situação particular, que não será possível criar uma imagem vetorial ou encontrar a representação exata nos bancos de imagem. </p>
                     <p><b>Objetivos educacionais com os quais combinam:</b> compreender e aplicar.</p>
                     <p><b>Dicas de boa prática:</b> indicar referência e comunicar ilustrador sobre contexto e identidade do projeto.</p>
-                    <figure class="my-5">
-                        <div class="figure-img mx-auto mb-4">
-                            <img class="img-fluid d-block mx-auto" src="img/ilustra3.jpg">
-                        </div>
-                    </figure>
+                    <div class="d-flex flex-wrap justify-content-evenly">
+                        <img class="img-fluid" src="img/quadro_01.png">
+                        <img class="img-fluid" src="img/quadro_02.png">
+                        <img class="img-fluid" src="img/quadro_03.png">
+                        <img class="img-fluid" src="img/quadro_04.png">
+                    </div>
 
                     <h2>GIF</h2>
                     <p>Arquivo de imagem que possibilita exibir pequenas animações, sem áudio. Normalmente utilizado quando se trata de um conteúdo breve a ser demonstrado, quando uma imagem estática não é o suficiente e, ao mesmo tempo, não há necessidade de um vídeo com áudio. </p>
@@ -541,6 +551,7 @@
         <script src="../assets/js/splide.min.js"></script>
         <!--Prog'n'roll - barra de progresso conforme rola a página-->
         <script src="../assets/js/prognroll.min.js"></script>
+        <script src="../print/print/template.config.js"></script>
         <!--Scripts gerais-->
         <script src="../assets/js/geral.js"></script>
 
