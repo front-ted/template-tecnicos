@@ -12,7 +12,28 @@
     font-family: "figtree-bold";
     src: url("../fonts/Figtree-Bold.ttf");
 }
-body{position: relative;}
+
+body {
+    position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	background-attachment: fixed !important;
+	height: auto;
+	overflow-x: hidden;
+  }
+.bg-fundo{
+	width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.6;
+    transition: all 0.8s;
+}
 .topo-logo{
     background: url('../images/asset_circulo.svg') no-repeat left -120px center, 
     url('../images/senac_logo.svg') no-repeat right 5% center;

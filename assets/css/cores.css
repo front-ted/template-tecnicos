@@ -14,7 +14,19 @@
 
 	--cor-primaria: #1e8cb1;
 	--cor-secundaria: #e0a945;
+
+	--gradiente-fundo: #684293;
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%),
+	radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%);
 }
+
+/*layout com fundo gradiente*/
+.bg-gradiente{
+	background-color: var(--gradiente-fundo);
+	background-image: var(--gradiente-bg);
+}
+
 
 /*elementos que levam gradiente primário - três cores*/
 #topo, .prognroll-bar{
