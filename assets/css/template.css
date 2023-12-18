@@ -21,7 +21,7 @@ body {
 	background-attachment: fixed !important;
 	height: auto;
 	overflow-x: hidden;
-  }
+}
 .bg-fundo{
 	width: 100%;
     height: 100%;
@@ -37,8 +37,13 @@ body {
 .topo-logo{
     background: url('../images/asset_circulo.svg') no-repeat left -120px center, 
     url('../images/senac_logo.svg') no-repeat right 5% center;
-    background-size: auto;
+    background-size: auto, 80px;
+    height: 80px;
 }
+.bloco{
+    padding: 40px 0;
+}
+.bloco.bg-gradiente *{color: #fff;}
 h1{
     padding: 40px 0;
     text-transform: uppercase;

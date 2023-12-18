@@ -26,6 +26,9 @@
 	background-color: var(--gradiente-fundo);
 	background-image: var(--gradiente-bg);
 }
+.bg-gradiente .pagina > *{
+	color: #fff;
+}
 
 
 /*elementos que levam gradiente primário - três cores*/
@@ -35,6 +38,7 @@
 }
 .borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
+	color: #000;
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
