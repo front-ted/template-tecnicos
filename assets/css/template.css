@@ -393,7 +393,24 @@ tbody td:first-child{border-left: 0;}
 .destaque.icone.atividade::before{background: url('../images/ico_atividade.svg') no-repeat;}
 .destaque.icone.visualizar::before{background: url('../images/ico_visualizar.svg') no-repeat;}
 .destaque.icone.nota::before{background: url('../images/ico_nota.svg') no-repeat;}
-.destaque.icone.conclusao::before{background: url('../images/ico_concluindo.svg') no-repeat;}
+.destaque.icone.conclusao::before{background: url('../images/ico_concluido.svg') no-repeat;}
+
+/*ÍCONES NEGATIVOS*/
+.icone.negativo.atencao::before,
+.icone.negativo.importante::before{background: url('../images/ico_atencao_neg.svg') no-repeat;}
+.icone.negativo.dica::before{background: url('../images/ico_dica_neg.svg') no-repeat;}
+.icone.negativo.refletir::before{background: url('../images/ico_refletir_neg.svg') no-repeat;}
+.icone.negativo.pergunta::before{background: url('../images/ico_pergunta_neg.svg') no-repeat;}
+.icone.negativo.pesquisar::before{background: url('../images/ico_pesquisar_neg.svg') no-repeat;}
+.icone.negativo.saibamais::before{background: url('../images/ico_saibamais_neg.svg') no-repeat;}
+.icone.negativo.observacao::before{background: url('../images/ico_observacao_neg.svg') no-repeat;}
+.icone.negativo.relembrar::before{background: url('../images/ico_relembrar_neg.svg') no-repeat;}
+.icone.negativo.download::before{background: url('../images/ico_download_neg.svg') no-repeat;}
+.icone.negativo.exemplo::before{background: url('../images/ico_exemplo_neg.svg') no-repeat;}
+.icone.negativo.atividade::before{background: url('../images/ico_atividade_neg.svg') no-repeat;}
+.icone.negativo.visualizar::before{background: url('../images/ico_visualizar_neg.svg') no-repeat;}
+.icone.negativo.nota::before{background: url('../images/ico_nota_neg.svg') no-repeat;}
+.icone.negativo.conclusao::before{background: url('../images/ico_concluido_neg.svg') no-repeat;}
 
 /*box de atividade*/
 .box-atividade::before{
