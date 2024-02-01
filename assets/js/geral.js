@@ -14,6 +14,7 @@ window.addEventListener('load', function(){
     $('.botao').click(function(){
       $(this).addClass('visitado');
     });
+    
 })
 
 // reposicionamento do botao do menu
@@ -24,11 +25,30 @@ $(window).scroll(function () {
 
   // if user scrolls down..
   if (topPos > 100) {
+    $('body').removeClass("mgTopAltoContraste");
+    $('body').addClass("mgTopAltoContraste_00");
     $('.bt-hamburguer').css("top", "20px");
     $('.bt-fecharmenu').css("top", "20px");
   } else {
+    $('body').removeClass("mgTopAltoContraste_00");
+    $('body').addClass("mgTopAltoContraste");
     $('.bt-hamburguer').css("top", "150px");      
     $('.bt-fecharmenu').css("top", "150px");      
   }
 
 }); // scroll END
+
+// alto contraste
+
+$(".btn-tema_pagina").click(function(){
+  console.log($(".btn-tema_pagina"))
+if($("body").hasClass('bg-claro')){
+  console.log("sim");
+  $("body").removeClass('bg-claro')
+  $("body").addClass("bg-escuro");
+}else if($("body").hasClass('bg-escuro')){
+  console.log("não");
+  $("body").removeClass('bg-escuro')
+  $("body").addClass("bg-claro")
+}
+});
