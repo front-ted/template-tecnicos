@@ -621,7 +621,7 @@ tbody td:first-child{border-left: 0;}
  .bg-escuro .modal { background: black;}
 
 .bg-escuro .modal-body, .bg-escuro  td{ background: #333; color: #fff}
-.bg-escuro .destaque, .bg-escuro .accordion-button{ background: #fff; color: black;}
+.bg-escuro .destaque, .bg-escuro .accordion-button, .bg-escuro .botao{ background: #fff; color: black;}
 .bg-escuro .destaque p, .destaque li{color: black !important;}
 
 
