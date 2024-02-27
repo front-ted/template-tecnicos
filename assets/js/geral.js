@@ -40,15 +40,46 @@ $(window).scroll(function () {
 
 // alto contraste
 
-$(".btn-tema_pagina").click(function(){
-  console.log($(".btn-tema_pagina"))
-if($("body").hasClass('bg-claro')){
-  console.log("sim");
-  $("body").removeClass('bg-claro')
-  $("body").addClass("bg-escuro");
-}else if($("body").hasClass('bg-escuro')){
-  console.log("não");
-  $("body").removeClass('bg-escuro')
-  $("body").addClass("bg-claro")
-}
+jQuery("document").ready(function($){
+
+  //localStorage.clear();
+
+  var tema_pagina;
+
+  $(".btn-tema_pagina").click(function(){
+
+    console.log($(".btn-tema_pagina"));
+
+    if($("body").hasClass('bg-claro')){
+      console.log("sim");
+      $("body").removeClass('bg-claro');
+      $("body").addClass("bg-escuro");
+      localStorage.setItem('tema_pagina', 'bg-escuro');
+    }else if($("body").hasClass('bg-escuro')){
+      console.log("não");
+      $("body").removeClass('bg-escuro');
+      $("body").addClass("bg-claro");
+      localStorage.setItem('tema_pagina', 'bg-claro');
+    }else{
+      console.log("sim");
+      $("body").addClass("bg-escuro");
+      localStorage.setItem('tema_pagina', 'bg-escuro');
+    }
+
+
+  });
+
+  tema_pagina = localStorage.getItem('tema_pagina');
+
+  //alert('Tema: '+tema_pagina);
+
+  if (tema_pagina == 'bg-claro'){
+    $("body").addClass("bg-claro");
+  }
+  if (tema_pagina == 'bg-escuro'){
+    $("body").addClass("bg-escuro");
+  }else{
+    $("body").addClass("bg-claro");
+  }
+
 });
