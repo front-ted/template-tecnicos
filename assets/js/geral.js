@@ -66,12 +66,9 @@ jQuery("document").ready(function($){
       localStorage.setItem('tema_pagina', 'bg-escuro');
     }
 
-
   });
 
   tema_pagina = localStorage.getItem('tema_pagina');
-
-  //alert('Tema: '+tema_pagina);
 
   if (tema_pagina == 'bg-claro'){
     $("body").addClass("bg-claro");
