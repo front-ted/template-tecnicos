@@ -54,11 +54,13 @@ jQuery("document").ready(function($){
       console.log("sim");
       $("body").removeClass('bg-claro');
       $("body").addClass("bg-escuro");
+      $('.btn-tema_pagina').css("background-image", "url(../images/mode_dark.png)");
       localStorage.setItem('tema_pagina', 'bg-escuro');
     }else if($("body").hasClass('bg-escuro')){
       console.log("não");
       $("body").removeClass('bg-escuro');
       $("body").addClass("bg-claro");
+      $('.btn-tema_pagina').css("background-image", "url(../images/mode_light.png)");
       localStorage.setItem('tema_pagina', 'bg-claro');
     }else{
       console.log("sim");
