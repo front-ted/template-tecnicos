@@ -986,10 +986,13 @@ tbody td:first-child {
 .bg-escuro h4,
 .bg-escuro h5,
 .bg-escuro p,
-.bg-escuro li,
 .bg-escuro figcaption,
 .bg-escuro p.enunciado {
     color: #fff;
+}
+
+.bg-escuro li{
+    color: #000;
 }
 
 .bg-escuro .container {
