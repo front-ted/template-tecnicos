@@ -85,7 +85,7 @@
     background-image: url(../../assets/images/bt_pause.svg);
 }
 .audio-player .btn-transcricao{
-    background-image: url(../../assets/images/bt_text.svg);
+    background-image: url(../../assets/images/bt_trancricao.svg);
 }
 .audio-player .btn-player:active, .audio-player .btn-player:focus{
     transform: translateY(-3px);

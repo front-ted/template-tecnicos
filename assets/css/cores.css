@@ -3,27 +3,24 @@
 	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
 */
 :root{
-	--bg-gradiente-primario: rgb(11,58,74);
-	--gradiente-primario: linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%);
+	--bg-gradiente-primario: #1A4480;
+	--gradiente-primario: linear-gradient(30deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%);
 
 	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
-	linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%) border-box;
+	linear-gradient(80deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%) border-box;
 
-	--bg-gradiente-secundario: rgb(80,215,226);
-	--gradiente-secundario: linear-gradient(60deg, rgba(80,215,226,1) 0%, rgba(46,137,151,1) 18%, rgba(11,59,75,1) 100%);
+	--bg-gradiente-secundario: #92ACCE;
+	/* --gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%); */
+	--gradiente-secundario: linear-gradient(120deg, #1A4480 0%, #92ACCE 100%);
 
-	--cor-primaria: #1e8cb1;
-	--cor-secundaria: #e0a945;
+	--cor-primaria: #92ACCE;
+	--cor-secundaria: #CF9993;
+	--cor-terciaria: #1A4480;
 
-	--gradiente-fundo: #684293;
+	--gradiente-fundo: #92ACCE;
 	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
 	radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%),
 	radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%);
-
-	/* grandiente fundo btGG */
-	--gradiente-btGiga: linear-gradient(90deg, var(--bg-gradiente-secundario) 0%, var(--cor-secundaria) 100%);
-    --gradiente-btGigaHover: radial-gradient(farthest-corner at 5% 5%, var(--bg-gradiente-primario) 50%, var(--bg-gradiente-secundario) 90%);
-	/* grandiente fundo btGG */
 }
 
 /*layout com fundo gradiente*/
@@ -44,11 +41,11 @@
 .borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
 	color: #000;
-	filter: drop-shadow(#525252 2px 2px 6px);
+	filter: drop-shadow(rgba(82, 82, 82, 0.3) 7px 7px 5px); /* Definindo a opacidade apenas na sombra */
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-.modal-header, .destaque.gradiente, 
+.destaque.gradiente, 
 .multipla-escolha button::before, .game-titulo, .offcanvas,
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
@@ -61,11 +58,16 @@
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
+.modal-header{
+	background: var(--bg-gradiente-primario);
+	background: var(--gradiente-primario);
+}
+
 
 /*elementos que levam a cor primária*/
-.carousel-indicators .indicador, .splide__pagination__page, .modal-body, 
+.carousel-indicators .indicador, .splide__pagination__page, .modal-body,
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast{
+.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast, .table-border{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
@@ -74,26 +76,36 @@
 	border-right-color: var(--cor-primaria);
 }
 .carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
-.game-associar-colunas button.item {
+.game-associar-colunas button.item, .table-header {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
-.botao, .game-body .card, .game-associar-colunas button.item:hover::before, 
+/* .botao, */ 
+.game-body .card, .game-associar-colunas button.item:hover::before,  
 .game-associar-colunas button.selecionado, .game-associar-colunas button.selecionado::before,
 .txtacao{
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }
+
+.botao{
+	border-color: var(--cor-primaria);
+}
+
 .hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
 thead, .accordion-button, .accordion-button:not(.collapsed){background-color: var(--cor-primaria);}
+
+td{
+	border-left-color: #fff;
+	border-bottom-color: var(--cor-primaria);
+}
+.page-link{color: var(--cor-primaria)}
+.page-item.active .page-link, .list-group-item.active{
+	background: var(--cor-primaria);
+	border-color: var(--cor-primaria)
+}
 
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}
 
-/* botaoGiga */
-.botao.botaoGiga {
-	background: var(--gradiente-btGiga);
-}
-.botaoGiga:before {
-	background: var(--gradiente-btGigaHover);
-}
+/*elementos que levam a cor terciária*/
