@@ -126,11 +126,12 @@ li a{
   border-color: #fff;
   border-width: 2px;
 }
-.drag-item a.link {
+.drag-item > a {
   padding-top: 10px;
   width: 100%;
   overflow: hidden;
   height: 100%;
+  line-height: 22px;
   padding-left: 10px;
   padding-right: 55px;
 }
